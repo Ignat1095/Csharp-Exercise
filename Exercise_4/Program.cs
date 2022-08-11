@@ -16,8 +16,8 @@ Console.WriteLine($"Максимальное число: {j_max}");
 // Второе число
 int a, b, c;
 a = 44;
-b = 5;
-c = 78;
+b = 55;
+c = 7;
 int maxValue;
 if (a > b)
 {
@@ -30,7 +30,7 @@ else
 
 if (maxValue > c)
 {
-    maxValue = maxValue;
+    //maxValue = maxValue;
 }
 else
 {
