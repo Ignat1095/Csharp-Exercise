@@ -25,21 +25,21 @@ while (i <= N)
 
 
 
-Console.Write("Введите второе число: ");
-int N_2 = Convert.ToInt32(Console.ReadLine());
-int j = 1;
+// Console.Write("Введите второе число: ");
+// int N_2 = Convert.ToInt32(Console.ReadLine());
+// int j = 1;
 
-Console.WriteLine($"Четные числа от 0 до {N_2} будут:");
+// Console.WriteLine($"Четные числа от 0 до {N_2} будут:");
 
-while (j <= N_2)
-{
-    if (j % 2 == 0)
-    {
-        Console.WriteLine($"{j} ");
-        j++;
-    }
-    else
-    {
-        j++;
-    }
-}
+// while (j <= N_2)
+// {
+//     if (j % 2 == 0)
+//     {
+//         Console.WriteLine($"{j} ");
+//         j++;
+//     }
+//     else
+//     {
+//         j++;
+//     }
+// }
