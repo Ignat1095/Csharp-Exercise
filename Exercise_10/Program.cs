@@ -10,6 +10,7 @@ Console.WriteLine();
 Console.WriteLine();
 
 //456 --> 5
+
 int a = 456;
 int a_10 = a % 100; //-->56
 int b_ = a_10 / 10; //-->5
@@ -18,19 +19,20 @@ Console.WriteLine("Second digit of " + a + " will be: " + b_);
 
 Console.WriteLine();
 Console.WriteLine();
+
 //782 --> 8
+
 Console.WriteLine("Second digit of " + 782 + " will be: " + 782 / 10 % 10);
-
-
 
 Console.WriteLine();
 Console.WriteLine();
 
 // 918 --> 1 or anythink random number
+
 Console.Write("input three-digit number (fron 100 before 999) : ");
 int j = Convert.ToInt32(Console.ReadLine());
 
-if ((99 < j) ^ (j > 999)) // (j / 100 < 0) ^ (j / 100 < 10)
+if ((j > 99) || (j < 1000)) // (j / 100 < 0) ^ (j / 100 < 10)
 {
     Console.WriteLine("Second digit " + j + " will be: " + (j / 10 % 10));
 }
