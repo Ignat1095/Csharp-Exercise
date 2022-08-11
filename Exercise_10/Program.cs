@@ -32,7 +32,7 @@ Console.WriteLine();
 Console.Write("input three-digit number (fron 100 before 999) : ");
 int j = Convert.ToInt32(Console.ReadLine());
 
-if ((j > 99) || (j < 1000)) // (j / 100 < 0) ^ (j / 100 < 10)
+if ((j > 99) & (j < 1000)) // (j / 100 < 0) ^ (j / 100 < 10)
 {
     Console.WriteLine("Second digit " + j + " will be: " + (j / 10 % 10));
 }

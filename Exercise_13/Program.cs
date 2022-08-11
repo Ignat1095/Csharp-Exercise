@@ -5,19 +5,6 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-// Console.Write("input three-digit number (fron 100 before 999) : ");
-// int j = Convert.ToInt32(Console.ReadLine());
-
-// if ((99 < j) ^ (j > 999)) // (j / 100 < 0) ^ (j / 100 < 10)
-// {
-//     Console.WriteLine("Second digit " + j + " will be: " + (j / 10 % 10));
-// }
-// else
-// {
-//     Console.WriteLine("You input not three-digit number");
-// }
-
-
 
 Console.Clear();
 
