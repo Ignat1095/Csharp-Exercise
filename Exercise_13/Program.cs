@@ -21,3 +21,4 @@ else
 {
     Console.WriteLine("no third digit");
 }
+Console.ReadKey();
