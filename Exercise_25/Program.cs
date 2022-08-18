@@ -4,7 +4,7 @@
 
 // 2, 4 -> 16
 
-int Power_A(int A, int B)
+int power_A(int A, int B)
 {
     // int result = 1;
 
@@ -26,7 +26,7 @@ int A = int.Parse(Console.ReadLine());
 Console.Write("В какую степень будем возводить? - ");
 int B = int.Parse(Console.ReadLine());
 
-int power_A = Power_A(A, B);
+int Power_A = power_A(A, B);
 
-Console.WriteLine("Ответ: " + power_A);
+Console.WriteLine("Ответ: " + Power_A);
 
