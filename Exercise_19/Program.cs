@@ -9,46 +9,23 @@
 
 // 23432 -> да
 
-// Console.WriteLine("Введие число: ");
-// string number = Console.ReadLine();
 
-// if (number[1] == number[number.Length - 1] || number[1] == number[number.Length - 2])
-// {
-//     Console.WriteLine("Ваше число: " + number + " Палиндром");
-// }
-// else Console.WriteLine("Ваше число: " + number + " НЕ палиндром");
+Console.Write("Введие палиндромное число: ");
+int number = int.Parse(Console.ReadLine());
+int oldValue = number;
+int newValue = 0;
 
-
-
-
-Console.Write("Введие палинтромное число или слово: ");
-string number = Console.ReadLine();
-
-int length = number.Length;
-
-for (int i = 0; i < length / 2; i++)
+while (number > 0)
 {
-    if (number[i] == number[length - i - 1])
-    {
-        Console.WriteLine("Ваше число: " + number + " Палиндром");
-    }
-    else Console.WriteLine("Ваше число: " + number + " НЕ палиндром");
+    int dig = number % 10;
+    newValue = newValue * 10 + dig;
+    number = number / 10;
+
+    // Console.WriteLine(newValue);
 }
+if (newValue == oldValue)
+{
+    Console.WriteLine("Число - палиндром");
+}
+else Console.WriteLine("Число - НЕ палиндром");
 
-// Console.Write("Введие палинтромное число или слово: ");
-// string number = Console.ReadLine();
-
-// int length = number.Length;
-// void check_number(string number)
-// {
-//     for (int i = 0; i < length / 2; i++)
-//     {
-//         if (number[i] == number[length - i - 1])
-//         {
-//             Console.WriteLine("Ваше число: " + number + " Палиндром");
-//         }
-//         else Console.WriteLine("Ваше число: " + number + " НЕ палиндром");
-//     }
-// }
-
-// check_number(number);
