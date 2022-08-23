@@ -32,7 +32,7 @@ Console.WriteLine("Кол-во четных значений в массиве =
 
 if (count == 10)
 {
-    Console.WriteLine("Вау! Да у нас джек-пот!!! =D");
+    Console.WriteLine("Вау! Да у Вас джек-пот!!! =D");
 }
 if (count == 0)
 {
