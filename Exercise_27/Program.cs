@@ -21,7 +21,7 @@ static int Foo(int value)
 }
 
 Console.WriteLine("Введите число: ");
-int myValue = int.Parse(Console.ReadLine());
+int myValue = int.Parse(Console.ReadLine()!);
 
 int result = Foo(myValue);
 Console.WriteLine(result);

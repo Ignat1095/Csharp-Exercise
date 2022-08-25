@@ -6,10 +6,10 @@
 
 
 Console.Write("Введите длину массива: ");
-int[] myArray = new int[int.Parse(Console.ReadLine())];
+int[] myArray = new int[int.Parse(Console.ReadLine()!)];
 
 Console.Write("Введите максимальное число массива: ");
-int digit = int.Parse(Console.ReadLine());
+int digit = int.Parse(Console.ReadLine()!);
 
 Random rand = new Random();
 

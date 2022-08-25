@@ -21,10 +21,10 @@ int power_A(int A, int B)
 }
 
 Console.Write("Введите число: ");
-int A = int.Parse(Console.ReadLine());
+int A = int.Parse(Console.ReadLine()!);
 
 Console.Write("В какую степень будем возводить? - ");
-int B = int.Parse(Console.ReadLine());
+int B = int.Parse(Console.ReadLine()!);
 
 int Power_A = power_A(A, B);
 
