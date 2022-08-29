@@ -93,7 +93,7 @@ static void DisplayArray(int[,] array)
 
 while (true)                                                         // Цикл While
 {                                                                    //
-    Console.Write("Введите размер квадратной матрицы (0 - exit): "); //Вот это
+    Console.Write("Введите размер квадратной матрицы (0 - exit): "); // Вот это
     int n;                                                           //
     if (!Int32.TryParse(Console.ReadLine(), out n) || n <= 0) break; // Зацикливает ввод  с консоли
 
