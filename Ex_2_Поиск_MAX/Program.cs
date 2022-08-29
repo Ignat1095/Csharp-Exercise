@@ -51,3 +51,52 @@ else
     Console.Write("Максимальное число: ");
     Console.WriteLine(a3);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт максимальное.
+
+Console.Write("Введите значения числа А: ");
+int Numb_A = int.Parse(Console.ReadLine()!);
+
+Console.Write("Введите значения числа В: ");
+int Numb_B = int.Parse(Console.ReadLine()!);
+
+int max_Number;
+if (Numb_A > Numb_B)
+{
+    max_Number = Numb_A;
+    Console.WriteLine("Число А больше");
+}
+
+else Console.WriteLine("Число B больше");
+
+if (Numb_A == Numb_B)
+{
+    Console.WriteLine("Числа равны друг другу ;D");
+}
+
+
+
+

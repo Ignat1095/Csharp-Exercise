@@ -54,3 +54,39 @@ for (int i = 0; i < array.Length; i++)
     }
 }
 Console.WriteLine($"Максимальное число: {max}");
+
+
+
+
+
+
+
+/*
+
+//Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+
+Console.Write("Введите значения числа А: ");
+int Numb_A = int.Parse(Console.ReadLine()!);
+
+Console.Write("Введите значения числа В: ");
+int Numb_B = int.Parse(Console.ReadLine()!);
+
+Console.Write("Введите значения числа C: ");
+int Numb_C = int.Parse(Console.ReadLine()!);
+
+int[] NewArray = new int[3];
+
+NewArray[0] = Numb_A;
+NewArray[1] = Numb_B;
+NewArray[2] = Numb_C;
+
+int max_Number = Numb_A;
+for (int i = 0; i < NewArray.Length; i++)
+{
+    if (NewArray[i] > max_Number)
+    {
+        max_Number = NewArray[i]; 
+    }
+}
+Console.WriteLine(max_Number);
+*/
