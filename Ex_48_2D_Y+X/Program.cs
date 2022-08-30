@@ -1,5 +1,5 @@
 ﻿// Задача: 48
-// Задайте 2мерный массив m x n,
+// Задайте 2мерный массив m y n,
 // каждый элемент в массиве находится по формуле 
 // Amn = m + n.
 
@@ -10,9 +10,10 @@
 
 void FillArray(int[,] array)
 {
+    Console.WriteLine();
     for (int i = 0; i < array.GetLength(0); i++)
     {
-        Console.WriteLine("[ ");
+        Console.Write("[ ");
         for (int j = 0; j < array.GetLength(1); j++)
         {
 
@@ -20,19 +21,21 @@ void FillArray(int[,] array)
             Console.Write(array[i, j]);
             Console.Write(" ");
         }
-        Console.WriteLine("]");
+        Console.Write("]");
         Console.WriteLine();
+
     }
+
 }
 
 
-Console.Write("m = ");
-int m = int.Parse(Console.ReadLine()!);
+Console.Write("\nY = ");
+int y = int.Parse(Console.ReadLine()!);
 
-Console.Write("n = ");
-int n = int.Parse(Console.ReadLine()!);
+Console.Write("X = ");
+int x = int.Parse(Console.ReadLine()!);
 
 
-int[,] array = new int[m, n];
+int[,] array = new int[y, x];
 
 FillArray(array);

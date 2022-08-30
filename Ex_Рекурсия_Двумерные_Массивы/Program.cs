@@ -7,10 +7,10 @@ string[,] table = new string[2, 5]; //Создаем 2мерный массив 
 // table[0,0]   table[0,1]  table[0,2]  ...  table[0,4]
 // table[1,0]   table[1,1]  table[1,2]  ...  table[1,4]
 
-
+/*
 table[1, 2] = "Слово"; // Так можно обратиться к нужному нам элементу
 
-/*for (int rows = 0; rows < 2; rows++) // Ряды 
+for (int rows = 0; rows < 2; rows++) // Ряды 
 {
     for (int coluns = 0; coluns < 5; coluns++) // Колонки
     {
