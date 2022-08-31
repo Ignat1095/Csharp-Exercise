@@ -40,8 +40,7 @@ int m = Convert.ToInt32(Console.ReadLine());
 
 int[,] array = new int[m, m];
 
-FillArray(array);
-PrintArray(array);
+FillArray(array); PrintArray(array);
 
 void AverageArray(int[,] arr) //Среднее арифметическое столбов
 {
