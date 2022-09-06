@@ -49,7 +49,6 @@ void AverageArray(int[,] arr) //Среднее арифметическое ст
     {
         Console.Write($"{i + 1} = ");
 
-
         double average = 0;
 
         for (int j = 0; j < arr.GetLength(1); j++)
@@ -60,6 +59,22 @@ void AverageArray(int[,] arr) //Среднее арифметическое ст
         average /= arr.GetLength(1);
         Console.Write(average + "\n");
     }
+
+    //Ответ Препода:
+
+    // По Задаче 52: Проверим, где у нас длина строки и столбца.
+    // Можно также пойти таким путем:
+    // for (int j = 0; j < array.GetLength(1); j++)
+    /*{
+        double sum = 0; //сюда будем суммировать элементы столбца
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            sum = sum + array[i, j];
+        }
+        double average = 0;
+        average = sum / array.GetLength(0);
+        Console.WriteLine($"Среднее арифметическое столбца {j}: {average}");
+    }*/
 
 }
 AverageArray(array);

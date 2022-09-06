@@ -8,75 +8,65 @@
 //     14 23 22 21  8
 //     13 12 11 10  9
 
-// int count = 1;
-// void FillArray(int[,] arr)
-// {
-//     for (int i = 0; i < arr.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < arr.GetLength(1); j++)
-//         {
-//             //     arr[i, j] = count;
-//             //     count++;
-//             while (i < arr.GetLength(i))
-//             {
-//                 arr[i, j] = count;
-//                 count++;
-//             }
-//         }
-//     }
-// }
+void PrintArray(int[,] arr)
+{
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        Console.Write("[ ");
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            Console.Write("{0,3}", arr[i, j] + " ");
+        }
+        Console.Write("]");
+        Console.WriteLine();
+    }
+}
 
-// void PrintArray(int[,] arr)
-// {
-//     for (int i = 0; i < arr.GetLength(0); i++)
-//     {
-//         Console.Write("[ ");
-//         for (int j = 0; j < arr.GetLength(1); j++)
-//         {
-//             Console.Write(arr[i, j] + " ");
-//         }
-//         Console.Write("]");
-//         Console.WriteLine();
-//     }
-// }
+Console.Write("Введите высоту матрицы: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите ширину матрицы: ");
+int n = Convert.ToInt32(Console.ReadLine());
 
-// Console.Write("Введите высоту матрицы: ");
-// int m = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите ширину матрицы: ");
-// int n = Convert.ToInt32(Console.ReadLine()); [[]]
-// int[,] array = new int[m, n];
+int[,] array = new int[m, n];
 
-// // FillArray(array);
-// //PrintArray(array);
+void SpiralArray(int[,] array)
+{
+    int count = 1; // Счетчик
 
-
-
-// int count = 1;
-// void SpiralArray(int[,] arr)
-// {
-//     for (int i = 0; i < arr.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < arr.GetLength(1); j++)
-//         {
-//             if (i < arr.GetLength(0))
-//             {
-//                 arr[i, j] = count;
-//                 count++;
-
-//             }
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            while (count <= array.GetLength(0) * array.GetLength(1))
+            {
+                array[i, j] = count;
+                count++;
+                if (i <= j + 1 && i + j < array.GetLength(1) - 1) // Движение влево -->
+                {
+                    j++;
+                }
+                else if (i < j && i + j >= array.GetLength(0) - 1) // Движение вниз
+                {
+                    i++;
+                }
+                else if (i >= j && i + j > array.GetLength(1) - 1) // Движение вправо <--
+                {
+                    j--;
+                }
+                else i--; // движение вверх ^
+            }
+        }
+    }
+}
 
 
-//         }
-//     }
-// }
-
-// SpiralArray(array);
-// PrintArray(array);
+SpiralArray(array);
+PrintArray(array);
 
 
 
-
-
+//Второй способ:
+/*
 static void DisplayArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -129,10 +119,11 @@ while (true)                                                         // Цикл
 
         ++i;
         ++j;
-        n = n < 2 ? 0 : n - 2; // Хз что это
 
+        n = n < 2 ? 0 : n - 2; // Хз что это
     }
 
     DisplayArray(arr);
     Console.WriteLine();
 }
+*/

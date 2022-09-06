@@ -17,7 +17,7 @@ void PrintRandomArray(int[] array) //Метод рандомного масси�
     for (int i = 0; i < length; i++)
     {
         Random random = new Random();
-        array[i] = random.Next(-100, 100);
+        array[i] = random.Next(10);
         Console.Write(array[i]);
         Console.Write(" ");
     }
