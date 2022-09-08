@@ -9,14 +9,14 @@ Console.WriteLine("Enter beginning of the range: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
 
-void RangeN(int i, int j)
+void RangeN_M(int i, int j)
 {
     if (i > n) return;
     Console.Write($"{i} ");
-    RangeN(i + 1, n);
+    RangeN_M(i + 1, j);
 }
 
-RangeN(m, n);
+RangeN_M(m, n);
 
 
 
